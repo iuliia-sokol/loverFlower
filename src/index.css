@@ -13,3 +13,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Lotus';
+  src: local('Lotus'), url('./fonts/WhiteLotus.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: local('SuisseIntl'),
+    url('./fonts/SuisseIntl-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Golden-Bloom';
+  src: local('Golden-Bloom'),
+    url('./fonts/Golden-Bloom-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gladioss-Feather';
+  src: local('Gladioss-Feather'),
+    url('./fonts/Gladioss-Feather.otf') format('truetype');
+}
