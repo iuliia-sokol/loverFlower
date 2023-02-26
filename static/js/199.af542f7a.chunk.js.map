@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/199.af542f7a.chunk.js","mappings":"6IAEMA,EAAW,WACf,OAAO,uBACR,EAED,UAAeC,EAAAA,KAAWD,E","sources":["pages/Homepage/Homepage.jsx"],"sourcesContent":["import React from 'react';\n\nconst Homepage = () => {\n  return <></>;\n};\n\nexport default React.memo(Homepage);\n"],"names":["Homepage","React"],"sourceRoot":""}
