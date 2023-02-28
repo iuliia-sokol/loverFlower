@@ -1,4 +1,3 @@
-import { Container } from 'components/Container/Container';
 import { Logo } from 'components/Logo/Logo';
 
 import {
@@ -6,6 +5,7 @@ import {
   ContactLink,
   ContactsBox,
   ContactsMainText,
+  HeaderContainer,
   HeaderContentWrapper,
   HeaderNavLink,
   HeaderWrapper,
@@ -16,7 +16,7 @@ import {
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <Container>
+      <HeaderContainer>
         <HeaderContentWrapper>
           <LogoWrapper>
             <Logo position="header" />
@@ -59,7 +59,7 @@ export const Header = () => {
             </li>
           </LinksWrapper>
         </HeaderContentWrapper>
-      </Container>
+      </HeaderContainer>
     </HeaderWrapper>
   );
 };

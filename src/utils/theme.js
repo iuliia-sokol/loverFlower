@@ -31,11 +31,12 @@ export const theme = {
   lineHeights: {
     main: '1.16',
     content: '1.29',
+    secondary: '1.5',
   },
   letterSpacings: {
     main: '0.1em',
     banners: '0.02em',
-    headers: '0.02em',
+    header: '0.2em',
     content: '0.04em',
   },
 

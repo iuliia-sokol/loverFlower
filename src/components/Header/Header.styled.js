@@ -9,9 +9,32 @@ export const HeaderContentWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 69px;
 `;
 export const LogoWrapper = styled.div`
   display: flex;
+`;
+
+export const HeaderContainer = styled.div`
+  width: 100%;
+  padding: 20px 16px 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 420px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 export const LinksWrapper = styled.ul`
@@ -20,6 +43,7 @@ export const LinksWrapper = styled.ul`
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  flex-grow: 1;
 `;
 
 export const HeaderNavLink = styled(NavLink)`

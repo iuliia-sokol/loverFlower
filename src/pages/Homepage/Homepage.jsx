@@ -1,7 +1,12 @@
+import { Hero } from 'components/Main/Hero/Hero';
 import React from 'react';
 
 const Homepage = () => {
-  return <></>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default React.memo(Homepage);
