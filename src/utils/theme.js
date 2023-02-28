@@ -1,9 +1,9 @@
 export const theme = {
-  breakpoints: ['320px', '768px', '1280px'],
+  breakpoints: ['320px', '768px', '1440px'],
   colors: {
     mainDark: '#000000',
     mainLight: '#FFFFFF',
-    secondryDark: '#040A0A',
+    secondaryDark: '#040A0A',
     signatureGreen: '#1F3A3A',
     signatureDark: '#0E2C2C',
 
@@ -22,10 +22,12 @@ export const theme = {
     blockGradient: 'rgba(0, 0, 0, 0.2)',
   },
   fonts: {
-    main: '"Alegreya Sans", sans-serif',
+    main: '"Oswald", sans-serif',
+    headers: 'Cormorant',
+    secondary: 'SuisseIntl',
+    signature: 'Lotus',
   },
-  fontSizes: {},
-  fontWeights: [500, 700],
+  fontWeights: [300, 400, 500, 600, 700],
   lineHeights: {
     main: '1.16',
     content: '1.29',
