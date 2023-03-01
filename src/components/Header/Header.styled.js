@@ -3,6 +3,12 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   z-index: 100;
+  width: 100%;
+  /* margin: 0 auto; */
+  position: absolute;
+  /* top: 20px;
+  left: 50%;
+  transform: translateX(-50%); */
 `;
 
 export const HeaderContentWrapper = styled.div`

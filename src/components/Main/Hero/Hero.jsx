@@ -1,39 +1,34 @@
 import {
-  BgImage,
-  Card,
-  HeroHeader,
-  HeroSection,
+  HeroHeaderTop,
+  HeroHeaderBottom,
   HeroSubHeader,
-  BgImageMain,
-  ImagesWrapper,
   SectionWrapper,
+  BgImageWrapper,
+  BgImageFront,
+  BgImageBack,
+  Gradient,
 } from './Hero.styled';
 
 import HeroBgImage1x from '../../../images/main/hero-bg-2-1x-min.png';
 // import HeroBgImage2x from '../../../images/main/hero-bg-2-2x-min.png';
-import HeroImage1x from '../../../images/main/hero-bg-1x-min.png';
-// import HeroImage2x from '../../../images/main/hero-bg-2x-min.png';
 import HeroFront1x from '../../../images/main/hero-bg-front-1x-min.png';
 import BgGradient from '../../../images/main/dark-gradient-min.png';
 
 export const Hero = () => {
   return (
     <SectionWrapper>
-      <img src={BgGradient} alt="gradient" />
-      <Card>
-        <BgImageMain src={HeroBgImage1x} alt="flowers" />
-      </Card>
-      <HeroSection>
-        <HeroHeader>lover</HeroHeader>
-        <ImagesWrapper>
-          <BgImage src={HeroFront1x} alt="flowers" />
-        </ImagesWrapper>
-        <HeroHeader>flower</HeroHeader>
+      <BgImageBack src={HeroBgImage1x} alt="flowers"></BgImageBack>
+      <BgImageWrapper>
+        <BgImageFront src={HeroFront1x} alt="flowers"></BgImageFront>
+      </BgImageWrapper>
 
-        <HeroSubHeader>
-          Творимо для тих, хто цінує свіжість та витонченість квітів
-        </HeroSubHeader>
-      </HeroSection>
+      <HeroHeaderTop>lover</HeroHeaderTop>
+
+      <HeroHeaderBottom>flower</HeroHeaderBottom>
+      <HeroSubHeader>
+        Творимо для тих, хто цінує свіжість та витонченість квітів
+      </HeroSubHeader>
+      <Gradient src={BgGradient} alt="gradient" />
     </SectionWrapper>
   );
 };

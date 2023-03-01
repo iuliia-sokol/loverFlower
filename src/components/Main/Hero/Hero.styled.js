@@ -1,72 +1,55 @@
 import styled from 'styled-components';
 
-import HeroImage1x from '../../../images/main/hero-bg-2-1x-min.png';
-import HeroImage2x from '../../../images/main//hero-bg-2-2x-min.png';
-
 export const SectionWrapper = styled.section`
-  min-height: 1480px;
-
-  & img {
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
-    width: 100%;
-  }
-  /* background-image: linear-gradient(
-    180deg,
-    rgba(4, 10, 10, 0) 0%,
-    #040a0a 100%
-  );
-  background-position: bottom;
-  overflow: visible; */
-`;
-export const HeroSection = styled.section`
-  overflow: visible;
+  width: 100%;
   position: relative;
-  width: 100%;
-  height: fit-content;
-  padding-bottom: 270px;
-  min-height: 865px;
+  margin: 0 auto;
+  overflow-x: visible;
+  height: max-content;
+  background-color: #000000;
 `;
 
-export const ImagesWrapper = styled.div`
-  width: 100%;
-  /* height: max-content; */
-  /* min-height: 1240px; */
+export const Gradient = styled.img`
   position: absolute;
   bottom: 0;
-  z-index: 0;
-`;
-
-export const BgImage = styled.img`
+  left: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 100;
 `;
 
-export const BgImageMain = styled.img`
-  width: 100%;
-  z-index: -2;
-`;
-
-export const Card = styled.div`
+export const BgImageFront = styled.img`
   position: absolute;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+`;
+
+export const BgImageBack = styled.img`
+  z-index: 20;
+  width: 100vw;
+`;
+
+export const BgImageWrapper = styled.div`
+  /* position: absolute; */
   width: 100%;
   height: 100%;
-  bottom: 0;
-  overflow: visible;
-  z-index: -2;
+  background-color: #000000;
+  z-index: -1;
 
   &::before {
     content: '';
     position: absolute;
     overflow: visible;
-    left: 0;
+    left: 5%;
+    bottom: 40%;
     width: 358.9px;
     height: 293.05px;
     border-radius: 50%;
     background: #249479;
     filter: blur(125px);
     transform: rotate(41.6deg);
+    z-index: 1;
   }
 
   &::after {
@@ -75,33 +58,15 @@ export const Card = styled.div`
     overflow: visible;
     width: 472.65px;
     height: 211.05px;
-    right: 0;
+    right: 5%;
+    bottom: 60%;
     background: #7d2253;
     filter: blur(125px);
     transform: rotate(-43.21deg);
   }
 `;
 
-// export const HeroContainer = styled.div`
-//   width: 100%;
-//   margin: 0 auto;
-//   box-sizing: border-box;
-//   overflow: visible;
-
-//   @media screen and (min-width: 420px) {
-//     width: 420px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//   }
-// `;
-
-export const HeroHeader = styled.h1`
+export const HeroHeaderTop = styled.h1`
   font-family: ${p => p.theme.fonts.headers};
   font-size: 200px;
   font-weight: ${p => p.theme.fontWeights[0]};
@@ -110,7 +75,27 @@ export const HeroHeader = styled.h1`
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
   text-align: center;
-  z-index: -1;
+  z-index: 1;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+`;
+
+export const HeroHeaderBottom = styled.h1`
+  font-family: ${p => p.theme.fonts.headers};
+  font-size: 200px;
+  font-weight: ${p => p.theme.fontWeights[0]};
+  line-height: 0.8;
+  letter-spacing: ${p => p.theme.letterSpacings.header};
+  color: ${p => p.theme.colors.mainLight};
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 40;
+  left: 50%;
+  top: 18%;
+  transform: translate(-50%, 0%);
+  position: absolute;
 `;
 
 export const HeroSubHeader = styled.p`
@@ -121,8 +106,11 @@ export const HeroSubHeader = styled.p`
   letter-spacing: ${p => p.theme.letterSpacings.banners};
   color: ${p => p.theme.colors.mainLight};
   text-align: center;
-  margin-top: 20px;
-  z-index: 13;
+  z-index: 100;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0%);
+  position: absolute;
 `;
 
 /* &::after {
