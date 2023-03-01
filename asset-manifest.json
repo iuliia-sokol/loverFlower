@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/loverFlower/static/css/main.d0c1b627.css",
-    "main.js": "/loverFlower/static/js/main.d68bc687.js",
-    "static/js/391.8ae61716.chunk.js": "/loverFlower/static/js/391.8ae61716.chunk.js",
+    "main.js": "/loverFlower/static/js/main.074e1546.js",
+    "static/js/391.4fcfb09e.chunk.js": "/loverFlower/static/js/391.4fcfb09e.chunk.js",
     "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
     "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
     "static/media/hero-bg-2-1x-min.png": "/loverFlower/static/media/hero-bg-2-1x-min.b50fe262b42382ecbefd.png",
@@ -18,11 +18,11 @@
     "static/media/sprite.svg": "/loverFlower/static/media/sprite.a5395dbebe85b7459d2c08cc8aec087f.svg",
     "index.html": "/loverFlower/index.html",
     "main.d0c1b627.css.map": "/loverFlower/static/css/main.d0c1b627.css.map",
-    "main.d68bc687.js.map": "/loverFlower/static/js/main.d68bc687.js.map",
-    "391.8ae61716.chunk.js.map": "/loverFlower/static/js/391.8ae61716.chunk.js.map"
+    "main.074e1546.js.map": "/loverFlower/static/js/main.074e1546.js.map",
+    "391.4fcfb09e.chunk.js.map": "/loverFlower/static/js/391.4fcfb09e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0c1b627.css",
-    "static/js/main.d68bc687.js"
+    "static/js/main.074e1546.js"
   ]
 }
