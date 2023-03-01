@@ -193,6 +193,34 @@ export const SocialMediaLinksWrapper = styled.ul`
   z-index: 100;
 `;
 
+export const PhoneLinksWrapper = styled.div`
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`;
+
+export const PhoneLink = styled.a`
+  font-family: ${p => p.theme.fonts.main};
+  font-size: 14px;
+  font-weight: ${p => p.theme.fontWeights[1]};
+  line-height: ${p => p.theme.lineHeights.main};
+  letter-spacing: ${p => p.theme.letterSpacings.main};
+  color: ${p => p.theme.colors.mainLight};
+  text-transform: uppercase;
+  color: ${p => p.theme.colors.accentGreen};
+
+  &:hover,
+  &:focus {
+    color: ${p => p.theme.colors.accentPink};
+  }
+`;
+
 /* &::after {
     content: '';
     width: 100%;

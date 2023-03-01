@@ -53,6 +53,7 @@ export const theme = {
     circle: '50%',
     tags: '40px',
     blocks: '20px',
+    button: '10px;',
   },
   transitions: {
     main: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1)',
