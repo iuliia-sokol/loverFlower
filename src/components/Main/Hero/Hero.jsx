@@ -10,6 +10,7 @@ import {
   LinkToCatalog,
   Signature,
   HeroContentWrapper,
+  SocialMediaLinksWrapper,
 } from './Hero.styled';
 
 import HeroBgImage1x from '../../../images/main/hero-bg-2-1x-min.png';
@@ -17,6 +18,7 @@ import HeroBgImage2x from '../../../images/main/hero-bg-2-2x-min.png';
 import HeroFront1x from '../../../images/main/hero-bg-front-1x-min.png';
 import HeroFront2x from '../../../images/main/hero-bg-front-2x-min.png';
 import BgGradient from '../../../images/main/dark-gradient-min.png';
+import { SocialMediaLinks } from 'components/SocialMediaLinks/SocialMediaLinks';
 
 export const Hero = () => {
   return (
@@ -46,6 +48,10 @@ export const Hero = () => {
         </HeroSubHeader>
         <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
       </HeroContentWrapper>
+      <SocialMediaLinksWrapper>
+        <SocialMediaLinks location="header" />
+      </SocialMediaLinksWrapper>
+
       <Signature>
         <span>Lover</span>
         <span>Flower</span>

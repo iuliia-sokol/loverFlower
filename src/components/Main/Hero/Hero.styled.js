@@ -185,6 +185,14 @@ export const Signature = styled.p`
   }
 `;
 
+export const SocialMediaLinksWrapper = styled.ul`
+  list-style: none;
+  position: absolute;
+  right: 5%;
+  top: 220px;
+  z-index: 100;
+`;
+
 /* &::after {
     content: '';
     width: 100%;
