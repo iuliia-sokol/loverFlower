@@ -9,7 +9,7 @@ export const theme = {
 
     accentGreen: '#43FFD2',
     accentPink: '#D978AC',
-    accentViolet: '#7D2253',
+    accentCherry: '#7D2253',
 
     inputEmpty: '#555555',
     inputDisabled: '#212121',
@@ -32,6 +32,7 @@ export const theme = {
     main: '1.16',
     content: '1.29',
     secondary: '1.5',
+    signature: '0.64',
   },
   letterSpacings: {
     main: '0.1em',

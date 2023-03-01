@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
@@ -80,9 +81,13 @@ export const HeroHeaderTop = styled.h1`
   top: 8%;
   transform: translate(-50%, 0%);
   position: absolute;
+
+  & span {
+    display: none;
+  }
 `;
 
-export const HeroHeaderBottom = styled.h1`
+export const HeroHeaderBottom = styled.h2`
   font-family: ${p => p.theme.fonts.headers};
   font-size: 200px;
   font-weight: ${p => p.theme.fontWeights[0]};
@@ -91,11 +96,10 @@ export const HeroHeaderBottom = styled.h1`
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
   text-align: center;
-  z-index: 40;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, 0%);
-  position: absolute;
+
+  & span {
+    display: none;
+  }
 `;
 
 export const HeroSubHeader = styled.p`
@@ -106,11 +110,79 @@ export const HeroSubHeader = styled.p`
   letter-spacing: ${p => p.theme.letterSpacings.banners};
   color: ${p => p.theme.colors.mainLight};
   text-align: center;
-  z-index: 100;
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, 0%);
+`;
+
+export const HeroContentWrapper = styled.div`
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
   position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  z-index: 50;
+
+  @media screen and (min-width: 420px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+`;
+
+export const LinkToCatalog = styled(NavLink)`
+  padding: 16px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: ${p => p.theme.fonts.main};
+  font-size: 20px;
+  font-weight: ${p => p.theme.fontWeights[4]};
+  line-height: ${p => p.theme.lineHeights.main};
+  letter-spacing: ${p => p.theme.letterSpacings.main};
+  color: ${p => p.theme.colors.mainDark};
+  background-color: ${p => p.theme.colors.accentGreen};
+
+  &:hover {
+    color: ${p => p.theme.colors.mainLight};
+    background-color: ${p => p.theme.colors.accentCherry};
+  }
+
+  &:active {
+    color: ${p => p.theme.colors.mainLight};
+    background-color: ${p => p.theme.colors.accentCherry};
+    box-shadow: inset 0px 0px 10px #1b000e;
+  }
+`;
+
+export const Signature = styled.p`
+  z-index: 100;
+  right: 7%;
+  bottom: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: ${p => p.theme.fonts.signature};
+  font-size: 70px;
+  font-weight: ${p => p.theme.fontWeights[1]};
+  line-height: ${p => p.theme.lineHeights.signature};
+  letter-spacing: ${p => p.theme.letterSpacings.main};
+  color: ${p => p.theme.colors.signatureGreen};
+  text-transform: capitalize;
+  transform: rotate(-10.26deg);
+
+  & span:last-child {
+    margin-left: 20%;
+  }
 `;
 
 /* &::after {

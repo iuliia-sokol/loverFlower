@@ -7,6 +7,9 @@ import {
   BgImageFront,
   BgImageBack,
   Gradient,
+  LinkToCatalog,
+  Signature,
+  HeroContentWrapper,
 } from './Hero.styled';
 
 import HeroBgImage1x from '../../../images/main/hero-bg-2-1x-min.png';
@@ -31,12 +34,22 @@ export const Hero = () => {
         ></BgImageFront>
       </BgImageWrapper>
 
-      <HeroHeaderTop>lover</HeroHeaderTop>
-
-      <HeroHeaderBottom>flower</HeroHeaderBottom>
-      <HeroSubHeader>
-        Творимо для тих, хто цінує свіжість та витонченість квітів
-      </HeroSubHeader>
+      <HeroHeaderTop>
+        lover <span>flower</span>
+      </HeroHeaderTop>
+      <HeroContentWrapper>
+        <HeroHeaderBottom>
+          <span>lover</span>flower
+        </HeroHeaderBottom>
+        <HeroSubHeader>
+          Творимо для тих, хто цінує свіжість та витонченість квітів
+        </HeroSubHeader>
+        <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
+      </HeroContentWrapper>
+      <Signature>
+        <span>Lover</span>
+        <span>Flower</span>
+      </Signature>
       <Gradient src={BgGradient} alt="gradient" />
     </SectionWrapper>
   );
