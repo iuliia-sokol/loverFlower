@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/loverFlower/static/css/main.b474cdbf.css",
-    "main.js": "/loverFlower/static/js/main.8c0f3e4f.js",
+    "main.js": "/loverFlower/static/js/main.f3942179.js",
     "static/js/61.29f8c83f.chunk.js": "/loverFlower/static/js/61.29f8c83f.chunk.js",
     "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
     "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
@@ -17,11 +17,11 @@
     "static/media/dark-gradient-min.png": "/loverFlower/static/media/dark-gradient-min.59e492661c030eff2986.png",
     "index.html": "/loverFlower/index.html",
     "main.b474cdbf.css.map": "/loverFlower/static/css/main.b474cdbf.css.map",
-    "main.8c0f3e4f.js.map": "/loverFlower/static/js/main.8c0f3e4f.js.map",
+    "main.f3942179.js.map": "/loverFlower/static/js/main.f3942179.js.map",
     "61.29f8c83f.chunk.js.map": "/loverFlower/static/js/61.29f8c83f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b474cdbf.css",
-    "static/js/main.8c0f3e4f.js"
+    "static/js/main.f3942179.js"
   ]
 }
