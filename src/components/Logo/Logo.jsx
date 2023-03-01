@@ -7,7 +7,7 @@ export const Logo = ({ position }) => {
   return (
     <NavLink to="/">
       <LogoWrapper position={position}>
-        <img alt="logo" src={logo}></img>
+        <img alt="logo" src={logo} />
       </LogoWrapper>
     </NavLink>
   );

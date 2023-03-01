@@ -5,5 +5,6 @@ export const LogoWrapper = styled.div`
 
   & img {
     width: 34px;
+    transform: translateY(-17px);
   }
 `;
