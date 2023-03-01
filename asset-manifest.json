@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/loverFlower/static/css/main.b474cdbf.css",
-    "main.js": "/loverFlower/static/js/main.98994097.js",
-    "static/js/727.5ecb7ae8.chunk.js": "/loverFlower/static/js/727.5ecb7ae8.chunk.js",
+    "main.css": "/loverFlower/static/css/main.d0c1b627.css",
+    "main.js": "/loverFlower/static/js/main.8ee2f4dd.js",
+    "static/js/384.06f9f32e.chunk.js": "/loverFlower/static/js/384.06f9f32e.chunk.js",
     "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
     "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
     "static/media/hero-bg-2-1x-min.png": "/loverFlower/static/media/hero-bg-2-1x-min.b50fe262b42382ecbefd.png",
@@ -17,12 +17,12 @@
     "static/media/dark-gradient-min.png": "/loverFlower/static/media/dark-gradient-min.59e492661c030eff2986.png",
     "static/media/sprite.svg": "/loverFlower/static/media/sprite.d77cf20b202a6b5b684069b17b0fc8d8.svg",
     "index.html": "/loverFlower/index.html",
-    "main.b474cdbf.css.map": "/loverFlower/static/css/main.b474cdbf.css.map",
-    "main.98994097.js.map": "/loverFlower/static/js/main.98994097.js.map",
-    "727.5ecb7ae8.chunk.js.map": "/loverFlower/static/js/727.5ecb7ae8.chunk.js.map"
+    "main.d0c1b627.css.map": "/loverFlower/static/css/main.d0c1b627.css.map",
+    "main.8ee2f4dd.js.map": "/loverFlower/static/js/main.8ee2f4dd.js.map",
+    "384.06f9f32e.chunk.js.map": "/loverFlower/static/js/384.06f9f32e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b474cdbf.css",
-    "static/js/main.98994097.js"
+    "static/css/main.d0c1b627.css",
+    "static/js/main.8ee2f4dd.js"
   ]
 }
