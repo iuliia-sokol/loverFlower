@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/loverFlower/static/css/main.b474cdbf.css",
-    "main.js": "/loverFlower/static/js/main.f08a7dc9.js",
-    "static/js/61.68c3b950.chunk.js": "/loverFlower/static/js/61.68c3b950.chunk.js",
+    "main.js": "/loverFlower/static/js/main.8c0f3e4f.js",
+    "static/js/61.29f8c83f.chunk.js": "/loverFlower/static/js/61.29f8c83f.chunk.js",
+    "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
+    "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
     "static/media/hero-bg-2-1x-min.png": "/loverFlower/static/media/hero-bg-2-1x-min.b50fe262b42382ecbefd.png",
     "static/media/flow-pink-min.png": "/loverFlower/static/media/flow-pink-min.9259625063b6b56f68e4.png",
     "static/media/hero-bg-front-1x-min.png": "/loverFlower/static/media/hero-bg-front-1x-min.9d8b34bac9a4590f8921.png",
@@ -15,11 +17,11 @@
     "static/media/dark-gradient-min.png": "/loverFlower/static/media/dark-gradient-min.59e492661c030eff2986.png",
     "index.html": "/loverFlower/index.html",
     "main.b474cdbf.css.map": "/loverFlower/static/css/main.b474cdbf.css.map",
-    "main.f08a7dc9.js.map": "/loverFlower/static/js/main.f08a7dc9.js.map",
-    "61.68c3b950.chunk.js.map": "/loverFlower/static/js/61.68c3b950.chunk.js.map"
+    "main.8c0f3e4f.js.map": "/loverFlower/static/js/main.8c0f3e4f.js.map",
+    "61.29f8c83f.chunk.js.map": "/loverFlower/static/js/61.29f8c83f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b474cdbf.css",
-    "static/js/main.f08a7dc9.js"
+    "static/js/main.8c0f3e4f.js"
   ]
 }
