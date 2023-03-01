@@ -13,6 +13,7 @@ import {
   SocialMediaLinksWrapper,
   PhoneLinksWrapper,
   PhoneLink,
+  CartBtnWrapper,
 } from './Hero.styled';
 import sprite from '../../../images/sprite.svg';
 
@@ -23,6 +24,7 @@ import HeroFront2x from '../../../images/main/hero-bg-front-2x-min.png';
 import BgGradient from '../../../images/main/dark-gradient-min.png';
 import { SocialMediaLinks } from 'components/SocialMediaLinks/SocialMediaLinks';
 import { CallBackBtn } from 'components/Buttons/CallBackButton';
+import { CartBtn } from 'components/Buttons/CartButton';
 
 export const Hero = () => {
   return (
@@ -66,6 +68,9 @@ export const Hero = () => {
           text="Замовити дзвінок"
         />
       </PhoneLinksWrapper>
+      <CartBtnWrapper>
+        <CartBtn />
+      </CartBtnWrapper>
       <Signature>
         <span>Lover</span>
         <span>Flower</span>

@@ -221,6 +221,15 @@ export const PhoneLink = styled.a`
   }
 `;
 
+export const CartBtnWrapper = styled.div`
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 /* &::after {
     content: '';
     width: 100%;
