@@ -93,7 +93,7 @@ export const HeroHeaderBottom = styled.h1`
   text-align: center;
   z-index: 40;
   left: 50%;
-  top: 18%;
+  top: 20%;
   transform: translate(-50%, 0%);
   position: absolute;
 `;
@@ -108,7 +108,7 @@ export const HeroSubHeader = styled.p`
   text-align: center;
   z-index: 100;
   left: 50%;
-  top: 30%;
+  top: 35%;
   transform: translate(-50%, 0%);
   position: absolute;
 `;
