@@ -42,14 +42,20 @@ export const Header = () => {
             </li>
             <li>
               <ContactsBox>
-                <ContactLink href="mailto: order@loverflower.com">
+                <ContactLink
+                  target="_blank"
+                  href="mailto: order@loverflower.com"
+                >
                   <ContactsMainText> order@loverflower.com</ContactsMainText>
                   <ContactDescrText>
                     Доставка 24/7 за домовленістю з оператором
                   </ContactDescrText>
                 </ContactLink>
 
-                <ContactLink href="https://goo.gl/maps/UazByYpRf2JZWFVb6">
+                <ContactLink
+                  target="_blank"
+                  href="https://goo.gl/maps/UazByYpRf2JZWFVb6"
+                >
                   <ContactsMainText> пр. Д.Яворницкого, 100</ContactsMainText>
                   <ContactDescrText>
                     10:00 до 21:00 <br /> без вихідних

@@ -58,7 +58,9 @@ export const Hero = () => {
         <SocialMediaLinks location="header" />
       </SocialMediaLinksWrapper>
       <PhoneLinksWrapper>
-        <PhoneLink href="tel:0955559533">+38(095)555-99-33</PhoneLink>
+        <PhoneLink target="_blank" href="tel:0955559533">
+          +38(095)555-99-33
+        </PhoneLink>
         <CallBackBtn
           icon={
             <svg>
