@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/loverFlower/static/css/main.d0c1b627.css",
-    "main.js": "/loverFlower/static/js/main.8ee2f4dd.js",
-    "static/js/384.06f9f32e.chunk.js": "/loverFlower/static/js/384.06f9f32e.chunk.js",
+    "main.js": "/loverFlower/static/js/main.d68bc687.js",
+    "static/js/391.8ae61716.chunk.js": "/loverFlower/static/js/391.8ae61716.chunk.js",
     "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
     "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
     "static/media/hero-bg-2-1x-min.png": "/loverFlower/static/media/hero-bg-2-1x-min.b50fe262b42382ecbefd.png",
@@ -15,14 +15,14 @@
     "static/media/SuisseIntl-Regular.ttf": "/loverFlower/static/media/SuisseIntl-Regular.7ea99720633194a9e3c4.ttf",
     "static/media/Gladioss-Feather.otf": "/loverFlower/static/media/Gladioss-Feather.17fbeb919258dee0492b.otf",
     "static/media/dark-gradient-min.png": "/loverFlower/static/media/dark-gradient-min.59e492661c030eff2986.png",
-    "static/media/sprite.svg": "/loverFlower/static/media/sprite.d77cf20b202a6b5b684069b17b0fc8d8.svg",
+    "static/media/sprite.svg": "/loverFlower/static/media/sprite.a5395dbebe85b7459d2c08cc8aec087f.svg",
     "index.html": "/loverFlower/index.html",
     "main.d0c1b627.css.map": "/loverFlower/static/css/main.d0c1b627.css.map",
-    "main.8ee2f4dd.js.map": "/loverFlower/static/js/main.8ee2f4dd.js.map",
-    "384.06f9f32e.chunk.js.map": "/loverFlower/static/js/384.06f9f32e.chunk.js.map"
+    "main.d68bc687.js.map": "/loverFlower/static/js/main.d68bc687.js.map",
+    "391.8ae61716.chunk.js.map": "/loverFlower/static/js/391.8ae61716.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0c1b627.css",
-    "static/js/main.8ee2f4dd.js"
+    "static/js/main.d68bc687.js"
   ]
 }
