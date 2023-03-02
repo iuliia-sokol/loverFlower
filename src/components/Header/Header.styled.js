@@ -4,11 +4,7 @@ import styled from 'styled-components';
 export const HeaderWrapper = styled.header`
   z-index: 100;
   width: 100%;
-  /* margin: 0 auto; */
   position: absolute;
-  /* top: 20px;
-  left: 50%;
-  transform: translateX(-50%); */
 `;
 
 export const HeaderContentWrapper = styled.div`
@@ -18,7 +14,11 @@ export const HeaderContentWrapper = styled.div`
   gap: 69px;
 `;
 export const LogoWrapper = styled.div`
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -44,12 +44,16 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LinksWrapper = styled.ul`
-  min-width: 10vw;
-  gap: 20px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-  flex-grow: 1;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    min-width: 10vw;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    flex-grow: 1;
+  }
 `;
 
 export const HeaderNavLink = styled(NavLink)`

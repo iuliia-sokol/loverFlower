@@ -14,6 +14,7 @@ import {
   PhoneLinksWrapper,
   PhoneLink,
   CartBtnWrapper,
+  HeroContainer,
 } from './Hero.styled';
 import sprite from '../../../images/sprite.svg';
 
@@ -40,43 +41,44 @@ export const Hero = () => {
           src={HeroFront1x}
           alt="flowers"
         ></BgImageFront>
+        <HeroHeaderTop>
+          lover <span>flower</span>
+        </HeroHeaderTop>
       </BgImageWrapper>
-
-      <HeroHeaderTop>
-        lover <span>flower</span>
-      </HeroHeaderTop>
-      <HeroContentWrapper>
-        <HeroHeaderBottom>
-          <span>lover</span>flower
-        </HeroHeaderBottom>
-        <HeroSubHeader>
-          Творимо для тих, хто цінує свіжість та витонченість квітів
-        </HeroSubHeader>
-        <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
-      </HeroContentWrapper>
-      <SocialMediaLinksWrapper>
-        <SocialMediaLinks location="header" />
-      </SocialMediaLinksWrapper>
-      <PhoneLinksWrapper>
-        <PhoneLink target="_blank" href="tel:0955559533">
-          +38(095)555-99-33
-        </PhoneLink>
-        <CallBackBtn
-          icon={
-            <svg>
-              <use href={sprite + `#call`} />
-            </svg>
-          }
-          text="Замовити дзвінок"
-        />
-      </PhoneLinksWrapper>
-      <CartBtnWrapper>
-        <CartBtn />
-      </CartBtnWrapper>
-      <Signature>
-        <span>Lover</span>
-        <span>Flower</span>
-      </Signature>
+      <HeroContainer>
+        <HeroContentWrapper>
+          <HeroHeaderBottom>
+            <span>lover</span>flower
+          </HeroHeaderBottom>
+          <HeroSubHeader>
+            Творимо для тих, хто цінує свіжість та витонченість квітів
+          </HeroSubHeader>
+          <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
+        </HeroContentWrapper>
+        <SocialMediaLinksWrapper>
+          <SocialMediaLinks location="header" />
+        </SocialMediaLinksWrapper>
+        <PhoneLinksWrapper>
+          <PhoneLink target="_blank" href="tel:0955559533">
+            +38(095)555-99-33
+          </PhoneLink>
+          <CallBackBtn
+            icon={
+              <svg>
+                <use href={sprite + `#call`} />
+              </svg>
+            }
+            text="Замовити дзвінок"
+          />
+        </PhoneLinksWrapper>
+        <CartBtnWrapper>
+          <CartBtn />
+        </CartBtnWrapper>
+        <Signature>
+          <span>Lover</span>
+          <span>Flower</span>
+        </Signature>
+      </HeroContainer>
       <Gradient src={BgGradient} alt="gradient" />
     </SectionWrapper>
   );

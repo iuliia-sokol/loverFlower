@@ -4,7 +4,7 @@ export const SocialMediaLinkListItem = styled.li`
   /* &:not(:last-child) {
     margin-right: 20px;
   } */
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: ${p => (p.location === 'header' ? '12px' : '0')};
       margin-right: ${p => (p.location === 'footer' ? null : '0')};
@@ -31,6 +31,6 @@ export const SocialMediaLink = styled.a`
     fill: ${p => p.theme.colors.accentGreen};
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
   }
 `;

@@ -15,27 +15,26 @@ export const Gradient = styled.img`
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 50;
 `;
 
 export const BgImageFront = styled.img`
   position: absolute;
-  z-index: 20;
+  z-index: 1;
   top: 0;
-  bottom: 0;
+  bottom: 10;
   width: 100vw;
 `;
 
 export const BgImageBack = styled.img`
-  z-index: 20;
+  z-index: -2;
   width: 100vw;
 `;
 
 export const BgImageWrapper = styled.div`
-  /* position: absolute; */
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: ${p => p.theme.colors.mainDark};
   z-index: -1;
 
   &::before {
@@ -44,72 +43,130 @@ export const BgImageWrapper = styled.div`
     overflow: visible;
     left: 5%;
     bottom: 40%;
-    width: 358.9px;
-    height: 293.05px;
+    width: 148.66px;
+    height: 121.38px;
     border-radius: 50%;
     background: #249479;
-    filter: blur(125px);
+    filter: blur(25px);
     transform: rotate(41.6deg);
-    z-index: 1;
+    z-index: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 358.9px;
+      height: 293.05px;
+      filter: blur(125px);
+    }
   }
 
   &::after {
     content: '';
     position: absolute;
     overflow: visible;
-    width: 472.65px;
-    height: 211.05px;
+    width: 130.33px;
+    height: 63.54px;
     right: 5%;
     bottom: 60%;
     background: #7d2253;
-    filter: blur(125px);
+    filter: blur(25px);
     transform: rotate(-43.21deg);
+    z-index: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 472.65px;
+      height: 211.05px;
+      filter: blur(125px);
+    }
   }
 `;
 
+export const HeroContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  @media screen and (min-width: 420px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+`;
 export const HeroHeaderTop = styled.h1`
   font-family: ${p => p.theme.fonts.headers};
-  font-size: 200px;
+  font-size: 50px;
   font-weight: ${p => p.theme.fontWeights[0]};
   line-height: 0.8;
   letter-spacing: ${p => p.theme.letterSpacings.header};
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
   text-align: center;
-  z-index: 1;
   left: 50%;
-  top: 8%;
+  top: 10%;
   transform: translate(-50%, 0%);
   position: absolute;
 
   & span {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 200px;
+  }
 `;
 
 export const HeroHeaderBottom = styled.h2`
   font-family: ${p => p.theme.fonts.headers};
-  font-size: 200px;
+  font-size: 50px;
   font-weight: ${p => p.theme.fontWeights[0]};
   line-height: 0.8;
   letter-spacing: ${p => p.theme.letterSpacings.header};
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
   text-align: center;
+  z-index: 1000;
 
   & span {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 200px;
   }
 `;
 
 export const HeroSubHeader = styled.p`
   font-family: ${p => p.theme.fonts.main};
-  font-size: 20px;
+  font-size: 14px;
   font-weight: ${p => p.theme.fontWeights[1]};
   line-height: ${p => p.theme.lineHeights.secondary};
   letter-spacing: ${p => p.theme.letterSpacings.banners};
   color: ${p => p.theme.colors.mainLight};
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const HeroContentWrapper = styled.div`
@@ -144,7 +201,7 @@ export const LinkToCatalog = styled(NavLink)`
   text-decoration: none;
   text-transform: uppercase;
   font-family: ${p => p.theme.fonts.main};
-  font-size: 20px;
+  font-size: 12px;
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.main};
   letter-spacing: ${p => p.theme.letterSpacings.main};
@@ -161,48 +218,65 @@ export const LinkToCatalog = styled(NavLink)`
     background-color: ${p => p.theme.colors.accentCherry};
     box-shadow: inset 0px 0px 10px #1b000e;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Signature = styled.p`
   z-index: 100;
   right: 7%;
-  bottom: 10%;
+  bottom: 15%;
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 30px;
   font-family: ${p => p.theme.fonts.signature};
-  font-size: 70px;
+  font-size: 40px;
   font-weight: ${p => p.theme.fontWeights[1]};
   line-height: ${p => p.theme.lineHeights.signature};
   letter-spacing: ${p => p.theme.letterSpacings.main};
   color: ${p => p.theme.colors.signatureGreen};
   text-transform: capitalize;
   transform: rotate(-10.26deg);
+  z-index: 100;
 
   & span:last-child {
     margin-left: 20%;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 70px;
+  }
 `;
 
 export const SocialMediaLinksWrapper = styled.ul`
-  list-style: none;
-  position: absolute;
-  right: 5%;
-  top: 220px;
-  z-index: 100;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    list-style: none;
+    position: absolute;
+    right: 5%;
+    top: 220px;
+    z-index: 100;
+  }
 `;
 
 export const PhoneLinksWrapper = styled.div`
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100;
-  gap: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 `;
 
 export const PhoneLink = styled.a`
@@ -222,13 +296,18 @@ export const PhoneLink = styled.a`
 `;
 
 export const CartBtnWrapper = styled.div`
-  position: absolute;
-  right: 5%;
-  bottom: 40%;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 5%;
+    bottom: 40%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+  }
 `;
 /* &::after {
     content: '';
