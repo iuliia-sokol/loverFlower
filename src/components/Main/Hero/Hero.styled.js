@@ -1,15 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const SectionWrapper = styled.section`
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-  overflow-x: visible;
-  height: max-content;
-  background-color: #000000;
-`;
-
 export const Gradient = styled.img`
   position: absolute;
   bottom: 0;

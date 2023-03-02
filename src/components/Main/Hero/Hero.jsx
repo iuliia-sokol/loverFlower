@@ -2,7 +2,6 @@ import {
   HeroHeaderTop,
   HeroHeaderBottom,
   HeroSubHeader,
-  SectionWrapper,
   BgImageWrapper,
   BgImageFront,
   BgImageBack,
@@ -27,12 +26,13 @@ import { SocialMediaLinks } from 'components/SocialMediaLinks/SocialMediaLinks';
 import { CallBackBtn } from 'components/Buttons/CallBackButton';
 import { CartBtn } from 'components/Buttons/CartButton';
 import { useMediaQuery } from 'hooks/useMedia';
+import { Section } from 'components/SectionWrapper/SectionWrapper';
 
 export const Hero = () => {
   const isRowBased = useMediaQuery('(min-width: 768px)');
 
   return (
-    <SectionWrapper>
+    <Section>
       <BgImageBack
         srcSet={`${HeroBgImage1x} 1x, ${HeroBgImage2x} 2x`}
         src={HeroBgImage1x}
@@ -91,6 +91,6 @@ export const Hero = () => {
         </Signature>
       </HeroContainer>
       <Gradient src={BgGradient} alt="gradient" />
-    </SectionWrapper>
+    </Section>
   );
 };

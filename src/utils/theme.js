@@ -6,6 +6,7 @@ export const theme = {
     secondaryDark: '#040A0A',
     signatureGreen: '#1F3A3A',
     signatureDark: '#0E2C2C',
+    bgText: '#0A1717',
 
     accentGreen: '#43FFD2',
     accentPink: '#D978AC',

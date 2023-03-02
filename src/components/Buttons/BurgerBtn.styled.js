@@ -6,7 +6,7 @@ export const BtnElement = styled.button`
   position: relative;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: none;
   cursor: pointer;
