@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-  z-index: 100;
+  z-index: 300;
   width: 100%;
   position: absolute;
 `;
@@ -29,6 +29,7 @@ export const HeaderContainer = styled.div`
   overflow: visible;
   display: flex;
   align-items: center;
+  z-index: 100;
 
   @media screen and (min-width: 420px) {
     width: 420px;
