@@ -15,7 +15,7 @@ import { SectionHeader } from 'components/SectionHeader/SectionHeader';
 
 export const Section1 = () => {
   return (
-    <Section>
+    <Section style={{ paddingBottom: 150 }}>
       <Gradient src={BgGradient} alt="gradient" />
       <BgWrapper>
         <BgTextWrapper>

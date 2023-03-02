@@ -12,7 +12,7 @@ export const BgWrapper = styled.div`
     position: absolute;
     overflow: visible;
     left: -5%;
-    bottom: 50%;
+    bottom: 30%;
     width: 148.66px;
     height: 121.38px;
     border-radius: 50%;
