@@ -66,7 +66,7 @@ export const Hero = () => {
           <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
           <PhoneLinksWrapper>
             <PhoneLink target="_blank" href="tel:0955559533">
-              +38(095)555-99-33
+              +38 (095) 555-99-33
             </PhoneLink>
             <CallBackBtn
               icon={

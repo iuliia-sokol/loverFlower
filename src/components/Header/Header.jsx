@@ -1,5 +1,6 @@
 import { BurgerBtn } from 'components/Buttons/BurgerBtn';
 import { CartBtn } from 'components/Buttons/CartButton';
+import { ContactLinkEl } from 'components/ContactLink/ContactLink';
 import { Logo } from 'components/Logo/Logo';
 import { Menu } from 'components/Menu/Menu';
 import { useMediaQuery } from 'hooks/useMedia';
@@ -7,10 +8,7 @@ import { useState } from 'react';
 import sprite from '../../images/sprite.svg';
 
 import {
-  ContactDescrText,
-  ContactLink,
   ContactsBox,
-  ContactsMainText,
   HeaderContainer,
   HeaderContentWrapper,
   HeaderNavLink,
@@ -71,29 +69,16 @@ export const Header = () => {
                   </li>
                   <li>
                     <ContactsBox>
-                      <ContactLink
-                        target="_blank"
+                      <ContactLinkEl
                         href="mailto: order@loverflower.com"
-                      >
-                        <ContactsMainText>
-                          order@loverflower.com
-                        </ContactsMainText>
-                        <ContactDescrText>
-                          Доставка 24/7 за домовленістю з оператором
-                        </ContactDescrText>
-                      </ContactLink>
-
-                      <ContactLink
-                        target="_blank"
+                        text="order@loverflower.com"
+                        descrText="Доставка 24/7 за домовленістю з оператором"
+                      />
+                      <ContactLinkEl
                         href="https://goo.gl/maps/UazByYpRf2JZWFVb6"
-                      >
-                        <ContactsMainText>
-                          пр. Д.Яворницкого, 100
-                        </ContactsMainText>
-                        <ContactDescrText>
-                          10:00 до 21:00 <br /> без вихідних
-                        </ContactDescrText>
-                      </ContactLink>
+                        text="пр. Д.Яворницкого, 100"
+                        descrText="З 10:00 до 21:00 <br /> без вихідних"
+                      />
                     </ContactsBox>
                   </li>
                 </LinksWrapper>

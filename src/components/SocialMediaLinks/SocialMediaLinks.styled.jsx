@@ -26,8 +26,8 @@ export const SocialMediaLink = styled.a`
   }
 
   & svg {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     fill: ${p => p.theme.colors.accentGreen};
   }
 
