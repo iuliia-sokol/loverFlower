@@ -4,7 +4,8 @@ export const LogoWrapper = styled.div`
   display: flex;
 
   & img {
-    width: 34px;
-    transform: translateY(-17px);
+    width: ${p => (p.location === 'menu' ? '22px' : '34px')};
+    transform: ${p =>
+      p.location === 'menu' ? 'translateY(-7px)' : 'translateY(-17px)'};
   }
 `;

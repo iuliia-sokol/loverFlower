@@ -58,19 +58,27 @@ export const LinksWrapper = styled.ul`
 `;
 
 export const HeaderNavLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: ${p => p.theme.fonts.main};
   font-size: 14px;
   font-weight: ${p => p.theme.fontWeights[1]};
   line-height: ${p => p.theme.lineHeights.main};
   letter-spacing: ${p => p.theme.letterSpacings.content};
   color: ${p => p.theme.colors.mainLight};
-
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover,
   &focus {
     color: ${p => p.theme.colors.accentGreen};
+  }
+
+  & svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
   }
 `;
 

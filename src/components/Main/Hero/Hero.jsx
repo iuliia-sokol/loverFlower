@@ -30,6 +30,7 @@ import { useMediaQuery } from 'hooks/useMedia';
 
 export const Hero = () => {
   const isRowBased = useMediaQuery('(min-width: 768px)');
+
   return (
     <SectionWrapper>
       <BgImageBack
