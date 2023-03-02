@@ -104,11 +104,12 @@ export const HeroContainer = styled.div`
     width: 1280px;
   }
 `;
+
 export const HeroHeaderTop = styled.h1`
   font-family: ${p => p.theme.fonts.headers};
   font-size: 50px;
   font-weight: ${p => p.theme.fontWeights[0]};
-  line-height: 0.8;
+  line-height: ${p => p.theme.lineHeights.header};
   letter-spacing: ${p => p.theme.letterSpacings.header};
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
@@ -135,7 +136,7 @@ export const HeroHeaderBottom = styled.h2`
   font-family: ${p => p.theme.fonts.headers};
   font-size: 50px;
   font-weight: ${p => p.theme.fontWeights[0]};
-  line-height: 0.8;
+  line-height: ${p => p.theme.lineHeights.header};
   letter-spacing: ${p => p.theme.letterSpacings.header};
   color: ${p => p.theme.colors.mainLight};
   text-transform: uppercase;
@@ -163,9 +164,11 @@ export const HeroSubHeader = styled.p`
   letter-spacing: ${p => p.theme.letterSpacings.banners};
   color: ${p => p.theme.colors.mainLight};
   text-align: center;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    margin-bottom: 47px;
   }
 `;
 
@@ -180,7 +183,6 @@ export const HeroContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
   z-index: 50;
 
   @media screen and (min-width: 420px) {
@@ -255,9 +257,10 @@ export const SocialMediaLinksWrapper = styled.ul`
   display: none;
 
   @media screen and (min-width: 768px) {
+    display: block;
     list-style: none;
     position: absolute;
-    right: 5%;
+    right: 16px;
     top: 220px;
     z-index: 100;
   }
@@ -268,8 +271,8 @@ export const PhoneLinksWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    right: 5%;
-    top: 50%;
+    right: 16px;
+    bottom: 0;
     transform: translateY(-50%);
     z-index: 100;
     gap: 7px;
@@ -300,8 +303,9 @@ export const CartBtnWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    right: 5%;
-    bottom: 40%;
+    right: 16px;
+    bottom: 0;
+    transform: translateY(50%);
     z-index: 100;
     display: flex;
     flex-direction: column;

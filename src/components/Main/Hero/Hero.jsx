@@ -54,26 +54,27 @@ export const Hero = () => {
             Творимо для тих, хто цінує свіжість та витонченість квітів
           </HeroSubHeader>
           <LinkToCatalog to="/catalog">Дивитись каталог</LinkToCatalog>
+          <PhoneLinksWrapper>
+            <PhoneLink target="_blank" href="tel:0955559533">
+              +38(095)555-99-33
+            </PhoneLink>
+            <CallBackBtn
+              icon={
+                <svg>
+                  <use href={sprite + `#call`} />
+                </svg>
+              }
+              text="Замовити дзвінок"
+            />
+          </PhoneLinksWrapper>
+          <CartBtnWrapper>
+            <CartBtn />
+          </CartBtnWrapper>
         </HeroContentWrapper>
         <SocialMediaLinksWrapper>
           <SocialMediaLinks location="header" />
         </SocialMediaLinksWrapper>
-        <PhoneLinksWrapper>
-          <PhoneLink target="_blank" href="tel:0955559533">
-            +38(095)555-99-33
-          </PhoneLink>
-          <CallBackBtn
-            icon={
-              <svg>
-                <use href={sprite + `#call`} />
-              </svg>
-            }
-            text="Замовити дзвінок"
-          />
-        </PhoneLinksWrapper>
-        <CartBtnWrapper>
-          <CartBtn />
-        </CartBtnWrapper>
+
         <Signature>
           <span>Lover</span>
           <span>Flower</span>

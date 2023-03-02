@@ -33,6 +33,7 @@ export const theme = {
     content: '1.29',
     secondary: '1.5',
     signature: '0.64',
+    header: '1.21',
   },
   letterSpacings: {
     main: '0.1em',
