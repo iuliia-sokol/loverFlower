@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const BtnElement = styled.button`
-  height: 60px;
-  width: 60px;
+  height: ${p => (p.location === 'header' ? '40px' : '60px')};
+  width: ${p => (p.location === 'header' ? '40px' : '60px')};
   position: relative;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: ${p => p.theme.radii.button};
-  padding: 15px;
+  padding: ${p => (p.location === 'header' ? '12px' : '15px')};
   border: none;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  background: ${p =>
+    p.location === 'header' ? 'transparent' : 'rgba(0, 0, 0, 0.2)'};
+  backdrop-filter: ${p => (p.location === 'header' ? 'none' : 'blur(10px)')};
   cursor: pointer;
 
   &:hover:not(:disabled),
@@ -26,8 +27,8 @@ export const BtnElement = styled.button`
   }
 
   & svg {
-    width: 30px;
-    height: 30px;
+    width: ${p => (p.location === 'header' ? '18px' : '30px')};
+    height: ${p => (p.location === 'header' ? '18px' : '30px')};
     fill: ${p => p.theme.colors.mainLight};
     stroke-dasharray: 2px;
   }
@@ -35,11 +36,15 @@ export const BtnElement = styled.button`
 
 export const Indicator = styled.span`
   position: absolute;
-  right: 8px;
-  top: 12px;
-  width: 16px;
-  height: 16px;
+  right: ${p => (p.location === 'header' ? '6px' : '8px')};
+  top: ${p => (p.location === 'header' ? '6px' : '12px')};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: ${p => (p.location === 'header' ? '13px' : '16px')};
+  height: ${p => (p.location === 'header' ? '13px' : '16px')};
   border-radius: ${p => p.theme.radii.circle};
   color: ${p => p.theme.colors.mainDark};
   background-color: ${p => p.theme.colors.accentGreen};
+  font-size: 8px;
 `;

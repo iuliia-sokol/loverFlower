@@ -9,6 +9,7 @@ export const CartBtn = ({
   disabled = false,
   type = 'button',
   onClick = null,
+  location,
 }) => {
   const products = useSelector(getProducts);
   //   console.log(products);
@@ -22,11 +23,16 @@ export const CartBtn = ({
   }, [products.length]);
 
   return (
-    <BtnElement type={type} disabled={disabled} onClick={onClick}>
-      <svg>
+    <BtnElement
+      location={location}
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      <svg location={location}>
         <use href={sprite + `#cart`} />
       </svg>
-      <Indicator>{prods}</Indicator>
+      <Indicator location={location}>{prods}</Indicator>
     </BtnElement>
   );
 };

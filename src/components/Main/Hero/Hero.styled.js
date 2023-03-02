@@ -143,7 +143,7 @@ export const HeroHeaderBottom = styled.h2`
   text-align: center;
   z-index: 1000;
   left: 50%;
-  top: 20%;
+  top: 25%;
   transform: translate(-50%, 0%);
   position: absolute;
 
@@ -189,7 +189,7 @@ export const HeroContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 50;
+  z-index: 120;
 
   @media screen and (min-width: 420px) {
     width: 420px;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const BtnElement = styled.button`
-  /* height: 20px;
-  width: 20px; */
+  width: 40px;
+  height: 40px;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -20,8 +20,8 @@ export const BtnElement = styled.button`
   }
 
   & svg {
-    width: 40px;
-    height: 30px;
+    width: 20px;
+    height: auto;
     fill: ${p => p.theme.colors.accentGreen};
   }
 `;

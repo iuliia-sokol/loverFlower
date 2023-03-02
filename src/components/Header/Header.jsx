@@ -1,4 +1,5 @@
 import { BurgerBtn } from 'components/Buttons/BurgerBtn';
+import { CartBtn } from 'components/Buttons/CartButton';
 import { Logo } from 'components/Logo/Logo';
 import { useMediaQuery } from 'hooks/useMedia';
 
@@ -23,7 +24,8 @@ export const Header = () => {
         <HeaderContentWrapper>
           {!isRowBased && (
             <>
-              <BurgerBtn></BurgerBtn>
+              <BurgerBtn />
+              <CartBtn location="header" />
             </>
           )}
           {isRowBased && (
