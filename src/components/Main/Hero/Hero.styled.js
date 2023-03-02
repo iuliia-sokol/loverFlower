@@ -20,7 +20,7 @@ export const Gradient = styled.img`
 
 export const BgImageFront = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   bottom: 10;
   width: 100vw;
@@ -115,9 +115,10 @@ export const HeroHeaderTop = styled.h1`
   text-transform: uppercase;
   text-align: center;
   left: 50%;
-  top: 10%;
+  top: 5%;
   transform: translate(-50%, 0%);
   position: absolute;
+  z-index: 1;
 
   & span {
     display: none;
@@ -125,6 +126,7 @@ export const HeroHeaderTop = styled.h1`
 
   @media screen and (min-width: 768px) {
     font-size: 100px;
+    top: 10%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -143,7 +145,7 @@ export const HeroHeaderBottom = styled.h2`
   text-align: center;
   z-index: 1000;
   left: 50%;
-  top: 25%;
+  top: 20%;
   transform: translate(-50%, 0%);
   position: absolute;
 
@@ -155,6 +157,7 @@ export const HeroHeaderBottom = styled.h2`
     font-size: 100px;
     position: static;
     transform: translate(0%, 0%);
+    top: 25%;
   }
 
   @media screen and (min-width: 1280px) {
