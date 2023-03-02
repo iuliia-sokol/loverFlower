@@ -26,8 +26,10 @@ import BgGradient from '../../../images/main/dark-gradient-min.png';
 import { SocialMediaLinks } from 'components/SocialMediaLinks/SocialMediaLinks';
 import { CallBackBtn } from 'components/Buttons/CallBackButton';
 import { CartBtn } from 'components/Buttons/CartButton';
+import { useMediaQuery } from 'hooks/useMedia';
 
 export const Hero = () => {
+  const isRowBased = useMediaQuery('(min-width: 768px)');
   return (
     <SectionWrapper>
       <BgImageBack
@@ -44,12 +46,19 @@ export const Hero = () => {
         <HeroHeaderTop>
           lover <span>flower</span>
         </HeroHeaderTop>
-      </BgImageWrapper>
-      <HeroContainer>
-        <HeroContentWrapper>
+        {!isRowBased && (
           <HeroHeaderBottom>
             <span>lover</span>flower
           </HeroHeaderBottom>
+        )}
+      </BgImageWrapper>
+      <HeroContainer>
+        <HeroContentWrapper>
+          {isRowBased && (
+            <HeroHeaderBottom>
+              <span>lover</span>flower
+            </HeroHeaderBottom>
+          )}
           <HeroSubHeader>
             Творимо для тих, хто цінує свіжість та витонченість квітів
           </HeroSubHeader>

@@ -142,6 +142,10 @@ export const HeroHeaderBottom = styled.h2`
   text-transform: uppercase;
   text-align: center;
   z-index: 1000;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0%);
+  position: absolute;
 
   & span {
     display: none;
@@ -149,6 +153,8 @@ export const HeroHeaderBottom = styled.h2`
 
   @media screen and (min-width: 768px) {
     font-size: 100px;
+    position: static;
+    transform: translate(0%, 0%);
   }
 
   @media screen and (min-width: 1280px) {
@@ -178,7 +184,7 @@ export const HeroContentWrapper = styled.div`
   box-sizing: border-box;
   position: absolute;
   left: 50%;
-  top: 20%;
+  bottom: 0;
   transform: translate(-50%, 0%);
   display: flex;
   flex-direction: column;
@@ -191,6 +197,8 @@ export const HeroContentWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    top: 20%;
+    bottom: unset;
   }
 
   @media screen and (min-width: 1280px) {
