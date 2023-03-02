@@ -5,7 +5,7 @@ export const BgWrapper = styled.div`
   position: absolute;
   overflow-y: visible;
   overflow-x: hidden;
-  /* z-index: 0; */
+  z-index: -2;
 
   &::before {
     content: '';
@@ -17,7 +17,6 @@ export const BgWrapper = styled.div`
     height: 121.38px;
     border-radius: 50%;
     background: #7d2253;
-
     filter: blur(25px);
     transform: rotate(32.83deg);
     z-index: 0;
@@ -50,11 +49,20 @@ export const BgWrapper = styled.div`
   }
 `;
 
+export const Gradient = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transform: rotate(180deg);
+  z-index: -1;
+`;
+
 export const BgTextWrapper = styled.div`
   position: relative;
   width: 150%;
-
-  z-index: -2;
+  z-index: -3;
 
   & p:first-child {
     text-align: center;
@@ -62,23 +70,5 @@ export const BgTextWrapper = styled.div`
 
   & p:last-child {
     text-align: end;
-  }
-  /* right: -10%;
-  top: 0; */
-`;
-
-export const SectionHeader = styled.h2`
-  font-family: ${p => p.theme.fonts.headers};
-  font-size: 40px;
-  font-weight: ${p => p.theme.fontWeights[0]};
-  line-height: ${p => p.theme.lineHeights.header};
-  letter-spacing: ${p => p.theme.letterSpacings.header};
-  color: ${p => p.theme.colors.mainLight};
-  text-transform: uppercase;
-  z-index: 40;
-  background-color: transparent;
-
-  @media screen and (min-width: 768px) {
-    font-size: 100px;
   }
 `;
