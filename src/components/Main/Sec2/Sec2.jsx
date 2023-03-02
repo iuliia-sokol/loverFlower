@@ -9,7 +9,11 @@ export const Section2 = () => {
   return (
     <Section style={{ paddingBottom: 180 }}>
       <BgImageWrapper>
-        <img src={Sec2Bg1x} alt="flowers" />
+        <img
+          srcSet={`${Sec2Bg1x} 1x, ${Sec2Bg2x} 2x`}
+          src={Sec2Bg1x}
+          alt="flowers"
+        />
       </BgImageWrapper>
       <Container>
         <HeaderWrapper>
