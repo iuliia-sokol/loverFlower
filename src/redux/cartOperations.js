@@ -1,20 +1,16 @@
-// import { createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { fetchPopularProducts } from 'services/fetchProducts';
 
-// export const fetchCity = createAsyncThunk(
-//   'getCity',
-//   async ({ lat, long }, { getState, rejectWithValue }) => {
-//     try {
-//       if (lat && long) {
-//         const data = await getCity(lat, long);
-//         return data;
-//       }
-//       const { location } = getState();
-//       const data = await getCity(location.latitude, location.longitude);
+export const getPopularProducts = createAsyncThunk(
+  'getPopularItems',
+  async (_, { rejectWithValue }) => {
+    try {
 
-//       return data;
-//     } catch (error) {
-//       console.log(error);
-//       return rejectWithValue(error);
-//     }
-//   }
-// );
+      const data = await fetchPopularProducts();
+      return data;
+    } catch (error) {
+      console.log(error);
+      return rejectWithValue(error);
+    }
+  }
+);

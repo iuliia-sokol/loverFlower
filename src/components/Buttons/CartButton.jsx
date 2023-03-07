@@ -1,7 +1,7 @@
 import { BtnElement, Indicator } from './CartButton.styled';
 import sprite from '../../images/sprite.svg';
 import { useSelector } from 'react-redux';
-import { getProducts } from 'redux/cartSelectors';
+import { selectProducts } from 'redux/cartSelectors';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
@@ -11,7 +11,7 @@ export const CartBtn = ({
   onClick = null,
   location,
 }) => {
-  const products = useSelector(getProducts);
+  const products = useSelector(selectProducts);
   //   console.log(products);
 
   const [prods, setProds] = useState(0);

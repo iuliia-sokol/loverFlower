@@ -1,16 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import {} from './cartOperations';
+import { getPopularProducts } from './cartOperations';
 
 const initialState = {
   products: [],
+  popularProducts: [],
   isLoading: false,
   error: null,
 };
 
-// const onPending = state => {
-//   state.isLoading = true;
-// };
+const onPending = state => {
+  state.isLoading = true;
+};
 
 export const cartSlice = createSlice({
   name: 'cart',
@@ -21,18 +22,16 @@ export const cartSlice = createSlice({
     }),
   },
   extraReducers: builder => {
-    // builder
-    // .addCase(fetchCity.pending, onPending)
-    // .addCase(fetchCity.fulfilled, (state, { payload }) => {
-    //   state.isLoading = false;
-    //   state.city = payload.cityName;
-    //   state.cityID = payload.placeId;
-    //   state.country = payload.country;
-    // })
-    // .addCase(fetchCity.rejected, (state, { payload }) => {
-    //   state.isLoading = false;
-    //   state.error = payload;
-    // })
+    builder
+      .addCase(getPopularProducts.pending, onPending)
+      .addCase(getPopularProducts.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.popularProducts = payload;
+      })
+      .addCase(getPopularProducts.rejected, (state, { payload }) => {
+        state.isLoading = false;
+        state.error = payload;
+      });
   },
 });
 
