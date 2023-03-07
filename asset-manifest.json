@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/loverFlower/static/css/main.591ea771.css",
-    "main.js": "/loverFlower/static/js/main.ac2883f8.js",
-    "static/js/660.3e54f943.chunk.js": "/loverFlower/static/js/660.3e54f943.chunk.js",
+    "main.js": "/loverFlower/static/js/main.deedb48a.js",
+    "static/css/515.88bce452.chunk.css": "/loverFlower/static/css/515.88bce452.chunk.css",
+    "static/js/515.3a99fa38.chunk.js": "/loverFlower/static/js/515.3a99fa38.chunk.js",
+    "static/js/305.1a0e2828.chunk.js": "/loverFlower/static/js/305.1a0e2828.chunk.js",
     "static/media/hero-bg-2-2x-min.png": "/loverFlower/static/media/hero-bg-2-2x-min.9939912a6babcd74f268.png",
     "static/media/hero-bg-front-2x-min.png": "/loverFlower/static/media/hero-bg-front-2x-min.29a7d8db8b3f62049d68.png",
     "static/media/hero-bg-2-1x-min.png": "/loverFlower/static/media/hero-bg-2-1x-min.b50fe262b42382ecbefd.png",
@@ -20,11 +22,13 @@
     "static/media/sprite.svg": "/loverFlower/static/media/sprite.a5395dbebe85b7459d2c08cc8aec087f.svg",
     "index.html": "/loverFlower/index.html",
     "main.591ea771.css.map": "/loverFlower/static/css/main.591ea771.css.map",
-    "main.ac2883f8.js.map": "/loverFlower/static/js/main.ac2883f8.js.map",
-    "660.3e54f943.chunk.js.map": "/loverFlower/static/js/660.3e54f943.chunk.js.map"
+    "main.deedb48a.js.map": "/loverFlower/static/js/main.deedb48a.js.map",
+    "515.88bce452.chunk.css.map": "/loverFlower/static/css/515.88bce452.chunk.css.map",
+    "515.3a99fa38.chunk.js.map": "/loverFlower/static/js/515.3a99fa38.chunk.js.map",
+    "305.1a0e2828.chunk.js.map": "/loverFlower/static/js/305.1a0e2828.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.591ea771.css",
-    "static/js/main.ac2883f8.js"
+    "static/js/main.deedb48a.js"
   ]
 }
